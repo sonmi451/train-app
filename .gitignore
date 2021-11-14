@@ -1,0 +1,19 @@
+# node.js and expo
+node_modules/**/*
+node_modules/
+npm-debug.log
+yarn-error.log
+.expo/*
+
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
+
+# macOS
+.DS_Store
+
+node_modules/
+npm-debug.log
+yarn-error.log

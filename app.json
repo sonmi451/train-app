@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Enigma Machine",
+    "slug": "enigma-machine",
+    "sdkVersion": "43.0.0",
+    "privacy": "public",
+    "platforms": [
+      "android",
+      "ios",
+    ],
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "",
+    "splash": {
+      "image": "",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "uk.co.aishamclean.trains"
+    },
+    "android": {
+      "package": "uk.co.aishamclean.trains"
+    }
+  }
+}
