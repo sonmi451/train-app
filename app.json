@@ -10,7 +10,7 @@
     ],
     "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "",
+    "icon": "./assets/hello.png",
     "splash": {
       "image": "",
       "resizeMode": "contain",
