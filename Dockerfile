@@ -5,17 +5,19 @@ FROM node:16
 RUN  npm i -g npm@latest
 
 # Install packages ensuring compatibility
-COPY package.json /trains/
-WORKDIR /trains/
+WORKDIR /trains
+COPY package*.json ./
+
+RUN mkdir /trains/node_modules
 RUN npm install
 
 # Add installed modules to path
 ENV PATH /trains/node_modules/.bin:$PATH
 
 # Add files needed for app
+COPY ./assets /trains/assets
 COPY ./app.json /trains/app.json
 COPY ./App.js /trains/App.js
-COPY ./src /trains/src
 
 # Set working directory
 WORKDIR /trains/
