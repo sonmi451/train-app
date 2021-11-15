@@ -5,10 +5,8 @@ FROM node:16
 RUN  npm i -g npm@latest
 
 # Install packages ensuring compatibility
-WORKDIR /trains
-COPY package*.json ./
-
-RUN mkdir /trains/node_modules
+COPY package.json /trains/
+WORKDIR /trains/
 RUN npm install
 
 # Add installed modules to path
