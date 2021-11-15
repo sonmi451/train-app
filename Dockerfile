@@ -15,6 +15,7 @@ ENV PATH /trains/node_modules/.bin:$PATH
 # Add files needed for app
 COPY ./app.json /trains/app.json
 COPY ./App.js /trains/App.js
+COPY ./src /trains/src
 
 # Set working directory
 WORKDIR /trains/
