@@ -1,9 +1,11 @@
 import React from 'react';
 import { Button, FlatList, StyleSheet, Text, View } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
+import { StationCodes } from './src/StationCodes.js';
 
 export default class App extends React.Component {
   state = {
+      sationCodes: StationCodes,
       departureCode: 'SUR',
       arrivalCode: 'WAT',
       departureName: 'Surbiton',
